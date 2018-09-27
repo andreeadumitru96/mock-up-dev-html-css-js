@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />   
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+
+        
+        <title> Miio Smile </title>
+    </head>
+    <body>
+        <div class="sidebar-container col-lg-2 hidden-md-down">   
+            <div class="sidebar">
+                <div class="sidebar__avatar">
+                    <div>
+                        <img src="./assets/avatar.png" class="rounded-circle" />
+                    </div>
+                    <div class="avatar-text">
+                        <p class="avatar-text-name">Dent Smart Implant</p>
+                        <p class="avatar-text-type">Laborator</p>                    
+                    </div>
+                </div>
+                
+                <div class="sidebar__options">
+                    <ul class="nav flex-column options-list">
+                        <li class="nav-item">
+                            <ul>
+                                <li><a class="nav-link main-link" href="#">Intrari Laborator<i class="fas fa-chevron-right"></i></a></li>
+                                <li class="active"><a class="nav-link" href="#">Adauga Lucrare Noua</a></li>
+                                <li><a class="nav-link" href="#">Lucrari Primite</a></li>
+                                <li><a class="nav-link" href="#">Calendar Productie</a></li>
+                            </ul>       
+                        </li>
+                        <li class="nav-item">
+                            <ul>
+                                <li><a class="nav-link main-link" href="#">Laboratorul Meu<i class="fas fa-chevron-right"></i></a></li>
+                                <li><a class="nav-link" href="#">Etape Laborator</a></li>
+                                <li><a class="nav-link" href="#">Angajati</a></li>
+                                <li><a class="nav-link" href="#">Furnizori</a></li>
+                                <li><a class="nav-link" href="#">Rapoarte</a></li>
+                                <li><a class="nav-link" href="#">Preturi</a></li>
+                                <li><a class="nav-link" href="#">Servicii</a></li>
+                            </ul>      
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-link no-margin-top" href="#">Medici</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-link no-margin-top" href="#">Pacienti</a>
+                        </li>
+                        <li class="nav-item nav-item-image-container">
+                            <img src="./assets/logo.png" class="nav-item-image"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header col-lg-10">
+            <div class="header__image">
+                <img src="./assets/miiosmile.png"/>
+                <div class="header__mobile">
+                    <button class="mobile-list-button"><i class="fas fa-bars"></i></button>
+                    <div class="mobile-list">
+                        <ul class="nav flex-column options-list">
+                            <li><a class="nav-link mobile-list-item" href="#">INTRARI LABORATOR <i class="fas fa-chevron-right"></i></a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">ADAUGA LUCRARE NOUA</a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">LUCRARI PRIMITE</a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">CALENDAR PRODUCTIE</a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">LABORATORUL MEU <i class="fas fa-chevron-right"></i></a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">ETAPE LABORATOR</a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">ANGAJATI</a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">FURNIZORI</a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">RAPOARTE</a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">PRETURI</a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">SERVICII</a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">MEDICI</a></li>
+                            <li><a class="nav-link mobile-list-item" href="#">PACIENTI</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main col-lg-10">
+            <section class="main__nav col-lg-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">ADAUGA LUCRARE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LUCRARI PRIMITE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CALENDAR LUCRARI</a>
+                    </li>
+                </ul>
+        </section>
+        
+        <div class="col-lg-9 col-sm-12 main-container">
+                <section class="main__add-patients-resume-work">
+                    <div class="input-group-container col-md-5 col-sm-12">
+                        <fieldset class="add-patients">
+                            <label class="add-patients__text standard-text">Selecteaza/ Adauga pacient</label>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </span>
+                                <input type="text" class="form-control" value="Radu Popescu"/>
+                            </div>
+                        </fieldset>
+                
+                        <fieldset class="add-medics">
+                            <label class="add-medics__text standard-text">Selecteaza/ Adauga medic</label>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </span>
+                                <input type="text" class="form-control" value="Dr. Joseph Clark"/>
+                            </div>
+                        </fieldset>
+                    </div>
+                        
+                    <div class="resume-work col-xl-9 col-md-12">
+                        <p class="resume-work__title standard-text">Rezumat lucrare</p>
+                        <div class="resume-work__items">
+                            <div class="category-delete">
+                                    <p><span class="cateory-delete-main">Punte: </span><span class="category-delete-value">1.1<i class="fas fa-times"></i></span></p>
+                                </div>
+                                <div class="category-delete">
+                                    <p><span class="cateory-delete-main">Unidentar: </span><span class="category-delete-value">1.3<i class="fas fa-times"></i></span></p>
+                                </div>
+                                <div class="category-delete">
+                                    <p><span class="cateory-delete-main">Componente: </span><span class="category-delete-value">Lingura individuala<i class="fas fa-times"></i></span><span class="category-delete-value">sablon ocluzie<i class="fas fa-times"></i></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="main__work-elements">
+                    <p class="work-elements__title standard-text">Selecteaza elementele restaurarii</p>
+                    <div class="work-elements__container">
+                        <div class="work-elements__images-list col-md-9">
+                            <div class="images-list">
+                                <div class="images-list-superior">
+                                    <div class="images-list-superior-left">
+                                        <img src="./assets/elemente_dentare/18.png"/>
+                                        <img src="./assets/elemente_dentare/17.png"/>
+                                        <img src="./assets/elemente_dentare/16.png"/>
+                                        <img src="./assets/elemente_dentare/15.png"/>
+                                        <img src="./assets/elemente_dentare/14.png"/>
+                                        <img src="./assets/elemente_dentare/13.png"/>
+                                        <img src="./assets/elemente_dentare/12.png"/>
+                                        <img src="./assets/elemente_dentare/11.png"/>
+                                    </div>
+                                    <div class="images-list-superior-right">
+                                        <img src="./assets/elemente_dentare/21.png"/>
+                                        <img src="./assets/elemente_dentare/22.png"/>
+                                        <img src="./assets/elemente_dentare/23.png"/>
+                                        <img src="./assets/elemente_dentare/24.png"/>
+                                        <img src="./assets/elemente_dentare/25.png"/>
+                                        <img src="./assets/elemente_dentare/26.png"/>
+                                        <img src="./assets/elemente_dentare/27.png"/>
+                                        <img src="./assets/elemente_dentare/28.png"/>
+                                    </div>
+                                </div>       
+                                <div class="images-list-inferior">
+                                    <div class="images-list-inferior-left">
+                                        <img src="./assets/elemente_dentare/48.png"/>
+                                        <img src="./assets/elemente_dentare/47.png"/>
+                                        <img src="./assets/elemente_dentare/46.png"/>
+                                        <img src="./assets/elemente_dentare/45.png"/>
+                                        <img src="./assets/elemente_dentare/44.png"/>
+                                        <img src="./assets/elemente_dentare/43.png"/>
+                                        <img src="./assets/elemente_dentare/42.png"/>
+                                        <img src="./assets/elemente_dentare/41.png"/>
+                                    </div>
+                                    <div class="images-list-inferior-right">
+                                        <img src="./assets/elemente_dentare/31.png"/>
+                                        <img src="./assets/elemente_dentare/32.png"/>
+                                        <img src="./assets/elemente_dentare/33.png"/>
+                                        <img src="./assets/elemente_dentare/34.png"/>
+                                        <img src="./assets/elemente_dentare/35.png"/>
+                                        <img src="./assets/elemente_dentare/36.png"/>
+                                        <img src="./assets/elemente_dentare/37.png"/>
+                                        <img src="./assets/elemente_dentare/38.png"/>
+                                    </div>
+                                </div>                
+                            </div>
+                        </div>
+                        <div class="work-elements-options col-md-3">
+                            <form>
+                                <div class="work-elements-options__1">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input work-elements-options-item">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Model de studiu</span>
+                                    </label>
+                                </div>
+
+                                <div class="work-elements-options__2">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input work-elements-options-item">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Gutiera contentie</span>
+                                    </label>
+                                </div>
+
+                                <div class="work-elements-options__3">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input work-elements-options-item">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Sablon chirurgical</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="work-elements-options__4">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input work-elements-options-item">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Sablon ocluzie</span>
+                                    </label>
+
+                                <div class="work-elements-options__5">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input work-elements-options-item">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Lingura individuala</span>
+                                    </label>
+                                </div>
+
+                                <div class="work-elements-options__6">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input work-elements-options-item">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Macheta</span>
+                                    </label>
+                                </div>
+
+                                <div class="work-elements-options__7">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input work-elements-options-item">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Articulator</span>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>  
+                    </div>
+                </section>
+                <section class="main__files">
+                    <div class="files-container col-sm-6">
+                        <p class="files-title standard-text">Adauga imagini</p>
+                        <div class="files-add-photos">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="files-container col-sm-6">
+                        <p class="files-title standard-text">Adauga fisier STL</p>
+                        <div class="files-add-stl-file">
+                            <div class="files-add-photos">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__samples">
+                    <fieldset class="samples-one col-sm-4">
+                        <label class="sample-one-title standard-text">Proba 1 (schelet)</label>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default js-date-picker" type="submit">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </button>
+                            </span>
+                            <input type="text" class="form-control" readonly/>
+                        </div>
+                    </fieldset>
+                    <fieldset class="samples-two col-sm-4">
+                        <label class="sample-two-title standard-text">Proba 2 (ceramica)</label>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default js-date-picker" type="submit">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </button>
+                            </span>
+                            <input type="text" class="form-control" readonly/>
+                        </div>
+                    </fieldset>
+                    <fieldset class="samples-three col-sm-4">
+                        <label class="sample-three-title standard-text">Termen finalizare</label>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default js-date-picker" type="submit">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </button>
+                            </span>
+                            <input type="text" class="form-control" readonly/>
+                        </div>
+                    </fieldset>
+                </section>
+                <section class="main__other-details col-lg-12">
+                    <div class="other-details">
+                        <p class="other-details-title standard-text">Alte detalii</p>
+                        <div class="other-details-container"></div>
+                    </div>
+                    <div class="other-details-save col-lg-12">
+                        <button type="button" class="other-details-save-btn">SALVEAZA</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+        <script src="./index.js"></script>
+    </body>
+</html>

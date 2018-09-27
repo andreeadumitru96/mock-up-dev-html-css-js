@@ -1,0 +1,746 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* end of CSS reset */
+
+.container {
+    width: 1370px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial;
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+    height: 100%;
+}
+
+.btn-default {
+    padding: 8px !important;
+    border-width: 0px !important;
+    margin: 0px !important;
+}
+
+.no-margin-top {
+    margin-top: 0px !important;
+}
+
+
+/* Sidebar */
+
+.sidebar-container {
+    padding: 60px 30px 10px 30px;
+    background-color: #00a5ff;
+    height: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .avatar-text {
+    font-size: 14px;
+    color: white;
+}
+
+.sidebar .avatar-text p {
+    margin-bottom: 0px !important;
+
+}
+.sidebar .avatar-text-name {
+    font-weight: bold;
+}
+
+.sidebar .avatar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar__avatar img {
+    width: 64px;
+    height: auto;
+}
+
+.sidebar__options {
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar__options .nav {
+    width: 100%;
+}
+.sidebar__options .nav a {
+    padding-left: 15px;
+}
+
+.nav-item-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item ul {
+    margin-bottom: 5px;
+}
+
+.sidebar__options .fa-chevron-right {
+    margin-left: 15px;
+}
+
+.nav-item-image {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 30px;
+}
+
+.options-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header */
+
+.header {
+    padding: 0px !important;
+}
+.header__image img{
+    width: 100%;
+    height: auto;
+}
+.header__mobile {
+    display: none;
+}
+
+/* Main section */
+
+.main {
+    /* height: calc(100% - 154px); */
+    overflow: auto;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.active {
+    background-color: #0084cc;
+}
+
+.sidebar .nav-link {
+    color: white;
+    text-transform: uppercase !important;
+}
+
+.main__nav {
+    padding-top: 5px;
+    background-color: #d8d8d8;    
+}
+
+.main__nav .active {
+    color: #00a5ff !important;
+}
+
+.resume-work__items {
+    border: 1px solid #d8d8d8;
+    padding-top: 3px;
+    font-style: italic;
+    padding-left: 4px;
+}
+
+.resume-work p {
+    margin-bottom: 0px;
+}
+
+.category-delete {
+    padding-bottom: 2px;
+}
+
+.category-delete-value {
+    background-color: #d8d8d8;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.category-delete-value i {
+    color: #f95080;
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+.standard-text{
+    margin-bottom: 2px !important;
+    color: #00a5ff;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.main__work-elements {
+    background-color: white;
+    padding-top: 14px;
+}
+
+.work-elements__images-list {
+    padding-left: 0px !important;
+    
+}
+
+.work-elements__container {
+    display: flex;
+}
+
+.work-elements-options {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 185px;
+    border: 1px solid #d8d8d8;
+    padding-left: 10px;
+}
+
+.work-elements-options__1 {
+    padding-top: 10px;
+}
+
+.custom-control-input {
+    border-radius: 0px !important;
+}
+
+.main__files {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.main__samples {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__samples fieldset {
+    margin-right: 20px;
+}
+
+.main__samples fieldset:last-child {
+    margin-right: 0px;
+}
+
+.add-patients button, .add-medics button, .files-add-photos button, .main__samples button {
+    background-color: #00a5ff !important;
+    color: white !important;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px;
+}
+
+.add-patients input, .add-medics input, .main__samples input {
+    height: 30px;
+    border-radius: 0px;
+    border: none;
+}
+.fa-times {
+    cursor: pointer;
+}
+
+.resume-work {
+    padding-right: 0px !important;
+}
+
+.category-delete:last-child {
+    padding-bottom: 6px;
+}
+
+.main__add-patients-resume-work {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    background-color: white;
+    
+}
+.input-group-container {
+    padding-left: 0px !important;
+}
+
+.files-add-photos, .files-add-stl-file {
+    background-color: #d8d8d8;
+    height: 60px;
+}
+
+.form-control {
+    background-color: #d8d8d8 !important;
+}
+
+.images-list {
+    border: 1px solid #00a5ff;
+    padding: 20px;
+}
+
+.images-list img {
+    width: 28px;
+    height: auto;
+    cursor: pointer;
+}
+.images-list-superior, .images-list-inferior {
+    display: flex;
+}
+
+.images-list-superior-left {
+    padding-bottom: 16px;
+    padding-right: 6px;
+    border-bottom: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+
+}
+
+.images-list-superior-right {
+    padding-bottom: 16px;
+    padding-left: 6px;
+
+}
+
+.images-list-inferior-right {
+    padding-top: 16px;
+    padding-left: 6px;
+    border-top: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+}
+
+.images-list-inferior-left {
+    padding-top: 16px;
+    padding-right: 6px;
+}
+
+.sample-container {
+    background-color: #d8d8d8;
+    height: 30px;
+    width: 230px;
+}
+
+.main__samples {
+    padding-top: 10px;
+}
+
+.main__other-details {
+    background-color:white;
+    padding-top: 10px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.other-details-container {
+    background-color: #d8d8d8;
+    height: 30px;
+    width: 100%;
+}
+
+.other-details-save-btn {
+    background-color: #00a5ff;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 16%;
+    font-size: 14px;
+}
+
+.other-details-save {
+    display: flex;
+    flex-flow: row-reverse;
+    padding-right: 0px !important;
+}
+
+.other-details-save-btn {
+    right: 0px;
+    bottom: 0px;
+}
+
+.files-container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.files-container:first-child {
+    margin-right: 20px;
+}
+
+.samples-one, .samples-two, .samples-three {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.sidebar__options .main-link {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+.sidebar__options .nav-item ul li:nth-child(2) {
+    margin-top: 7px;
+} 
+
+.work-elements-options::-webkit-scrollbar {
+    width: 1em;
+}
+.work-elements-options::-webkit-scrollbar-track {
+    background: #d8d8d8; 
+}
+  
+.work-elements-options::-webkit-scrollbar-thumb {
+  background-color: #00a5ff;
+}
+
+/* Media Queries */
+
+/* LARGE **/
+@media all and (min-width: 992px) and (max-width: 1200px) {
+    .sidebar__options, .avatar-text {
+        font-size: 12px;
+    }
+    .sidebar__options .main-link {
+        font-size: 12px;
+        margin-bottom: 0px !important;
+    }
+
+    .images-list img {
+        width: 26px;
+        height: 36px;
+    }
+    .nav-item-image-container img {
+        width: 120px;
+    }
+
+    .other-details-save-btn {
+        width: 18%;
+    }
+    .input-group-container {
+        padding-right: 0px !important
+    }
+}
+
+/* MEDIUM **/
+@media all and (min-width: 769px) and (max-width: 991px) { 
+	.hidden-md-down {
+        display: none !important;
+    }
+
+    .header__mobile {
+        display: block;
+    }
+    .mobile-list {
+        display: none;
+        background-color: #28414c;
+        position: absolute;
+        z-index: 9999;
+        width: 190px;
+        border-radius: 3px;
+        right: 20px;
+        left: 35px;
+        top: 95px;
+    }
+    .mobile-list-button {
+        background-color: transparent;
+        color: #28414c !important;
+        border: 0px;
+        font-size: 28px;
+        margin-right: 20px;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        color: white !important;
+    }
+    .mobile-list-item {
+        padding: 10px;
+        color: #eff0f2;
+        cursor: pointer;
+    } 
+    .input-group-container {
+        padding-right: 0px !important
+    }
+}
+
+
+/* SMALL **/
+@media all and (min-width: 577px) and (max-width: 769px){
+    
+    .work-elements__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__add-patients-resume-work {
+        flex-direction: column;
+    }
+    .work-elements-options {
+        margin-top: 20px;
+    }
+    .header__mobile {
+        display: block;
+    }
+    .mobile-list {
+        display: none;
+        background-color: #28414c;
+        position: absolute;
+        z-index: 9999;
+        width: 190px;
+        border-radius: 3px;
+        right: 20px;
+        left: 35px;
+        top: 80px;
+    }
+    .mobile-list-button {
+        background-color: transparent;
+        color: #28414c !important;
+        border: 0px;
+        font-size: 24px;
+        margin-right: 20px;
+        position: absolute;
+        top: 34px;
+        left: 16px;
+        color: white !important;
+    }
+    .mobile-list-item {
+        padding: 10px;
+        color: #eff0f2;
+        cursor: pointer;
+    } 
+    .resume-work {
+        padding-left: 0px !important;
+    }
+    .work-elements__images-list {
+        padding-right: 0px !important;
+    }
+    .other-details-save-btn {
+        width: 15%;
+    }
+    .input-group-container {
+        padding-right: 0px !important
+    }
+}
+
+@media all and (min-width: 421px) and (max-width: 577px){
+	.work-elements__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__add-patients-resume-work {
+        flex-direction: column;
+    }
+
+    .main__nav {
+        font-size: 12px;
+    }
+    .work-elements-options {
+        margin-top: 20px;
+    }
+    .header__mobile {
+        display: block;
+    }
+    .mobile-list {
+        display: none;
+        background-color: #28414c;
+        position: absolute;
+        z-index: 9999;
+        width: 190px;
+        border-radius: 3px;
+        right: 20px;
+        left: 35px;
+        top: 60px;
+    }
+    .mobile-list-button {
+        background-color: transparent;
+        color: #28414c !important;
+        border: 0px;
+        font-size: 20px;
+        margin-right: 20px;
+        position: absolute;
+        top: 22px;
+        left: 8px;
+        color: white !important;
+    }
+    .mobile-list-item {
+        padding: 10px;
+        color: #eff0f2;
+        cursor: pointer;
+    }
+    .resume-work {
+        padding-left: 0px !important;
+    }
+    .work-elements__images-list {
+        padding-right: 0px !important;
+    }
+    .main__files {
+        flex-direction: column;
+    }
+    .main__samples {
+        flex-direction: column;
+        padding-top: 0px !important;
+    }
+    .other-details-save-btn {
+        width: 20%;
+    }
+    .input-group-container {
+        padding-right: 0px !important
+    }
+
+    .files-container:first-child {
+        margin-right: 0px;
+    }
+    .main__samples fieldset {
+        margin-right: 0px;
+    }
+}
+
+@media all and (max-width: 421px){
+	.work-elements__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__add-patients-resume-work {
+        flex-direction: column;
+    }
+
+    .header__mobile {
+        display: block;
+    }
+    .main__nav {
+        font-size: 8px;
+    }
+    .standard-text {
+        font-size: 10px;
+    }
+    .work-elements-options {
+        margin-top: 20px;
+    }
+    .mobile-list-button {
+        background-color: transparent;
+        color: #28414c !important;
+        border: 0px;
+        font-size: 16px;
+        margin-right: 20px;
+        position: absolute;
+        top: 16px;
+        left: 6px;
+        color: white !important;
+    }
+    .mobile-list {
+        display: none;
+        background-color: #28414c;
+        position: absolute;
+        z-index: 9999;
+        width: 190px;
+        border-radius: 3px;
+        right: 20px;
+        left: 35px;
+        top: 45px;
+    }
+    
+    .mobile-list-item {
+        padding: 10px;
+        color: #eff0f2;
+        cursor: pointer;
+    } 
+    .resume-work {
+        padding-left: 0px !important;
+    }
+
+    .work-elements__images-list {
+        padding-right: 0px !important;
+    }
+    .main__files {
+        flex-direction: column;
+    }
+    .main__samples {
+        flex-direction: column;
+        padding-top: 0px !important;
+    }
+    .other-details-save-btn {
+        width: 35%;
+    }
+    .input-group-container {
+        padding-right: 0px !important
+    }
+    
+    .files-container:first-child {
+        margin-right: 0px;
+    }
+    .main__samples fieldset {
+        margin-right: 0px;
+    }
+
+}
